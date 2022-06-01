@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kelly Bootstrap Template - Index</title>
+  <title>Dzomatio jordan</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -38,21 +38,20 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container-fluid d-flex justify-content-between align-items-center">
-
-     <div style=" padding:0%;width:130px;height:130px"><img style="font-size: 30px" src="{{asset("img/monlogo.png ") }}" class="img-fluid" alt="logo jordan dzomatio"></div> 
+  <header id="header" class="fixed-top ">
+    <div class="container-fluid d-flex justify-content-between align-items-center mt-4">
+<h2 id="logo"><span style="color: #34b7a7">J</span>ordan <span style="color: #34b7a7">D</span>zomatio</h2>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="index.html">Acceuil</a></li>
+          <li><a class="active" href="/">Acceuil</a></li>
           
           <li><a href="resume.html">Mon cv</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{{ route("portfolio") }}">Portfolio</a></li>
+          <li><a href="{{ route("contact") }}">Contact</a></li>
           <li class=""><a  href=""><span  style="color:#34b7a7; ">Administration</span> </a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -70,13 +69,17 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
-      <h1> Jordan Dzomatio</h1>
-      <h2>Graphic design et Developpeur web  passionné par les nouvelles technologie</h2>
-      <a href="about.html" class="btn-about">A propos de moi</a>
-    </div>
-  </section><!-- End Hero -->
+  <main id="main">
+  
+    <div class="container-fluid " style="margin-top: 100px ; margin-bottom: 0px ;">
+       @yield('content')
+     </div>
+  </main>
+ 
+ 
+
+
+<!-- End Hero -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
